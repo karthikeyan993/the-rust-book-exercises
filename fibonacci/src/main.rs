@@ -7,6 +7,7 @@ fn main() {
 }
 
 fn fibonacci(n: u32) {
+    // Assuming fibonacci 1st entry starts from 1
     if n <= 2 {
         if n == 1 {
             println!("the no 1 number in fibonacci series is 0");
@@ -20,6 +21,7 @@ fn fibonacci(n: u32) {
         let mut first = 0;
         let mut second = 1;
         while index <= n {
+            // Adding first and second and assigning the second to first and sum to second number
             let mut _sum = 0;
             _sum = first + second;
             first = second;
